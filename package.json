@@ -1,0 +1,25 @@
+{
+  "name": "me",
+  "version": "0.0.1",
+  "description": "self introduction",
+  "main": "index.js",
+  "repository": "https://github.com/jk195417/jk195417.github.io.git",
+  "author": "楊竑昕 <jk195417@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "s": "parcel index.html",
+    "predeploy": "rm -rf dist && parcel build index.html --public-url ./",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.0",
+    "gh-pages": "^2.1.0",
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.22.9"
+  }
+}
