@@ -1,7 +1,15 @@
 @import '~bootstrap/scss/bootstrap';
 @import './fonts.scss';
-@import './text.scss';
 
-body {
- font-family: 'Taipei Sans TC Beta';
+.ti-2 {
+   text-indent: 2em;
+}
+
+.nav-main {
+  &.active {
+    border-width: 2px;
+    border-color: $dark;
+    border-style: solid;
+    border-radius: 3px;
+  }
 }
