@@ -1,16 +1,17 @@
-import nav from '/components/nav.html'
-import footer from '/components/footer.html'
-import links from '/components/links.html'
-import index from '/components/main/index.html'
-import projects from '/components/main/projects.html'
-import resume from '/components/main/resume.html'
-import references from '/components/main/references.html'
+import nav from '../components/nav.html'
+import footer from '../components/footer.html'
+import links from '../components/links.html'
+import index from '../components/main/index.html'
+import education from '../components/main/education.html'
+import projects from '../components/main/projects.html'
+import resume from '../components/main/resume.html'
+import references from '../components/main/references.html'
 
 const components = {
   main: {
     index: 0,
-    names: ['index', 'projects', 'resume', 'references'],
-    html: [index, projects, resume, references]
+    names: ['index','education', 'projects', 'resume', 'references'],
+    html: [index, education, projects, resume, references]
   }
 }
 
@@ -41,7 +42,8 @@ function renderLinks() {
 function renderMain() {
   const node = document.getElementById('component-main')
   clean(node)
-  node.insertAdjacentHTML('afterbegin', components.main.html[components.main.index])
+  let child = components.main.html[components.main.index]
+  node.insertAdjacentHTML('afterbegin', child)
 }
 
 function render() {
@@ -59,6 +61,11 @@ function changeMain(main) {
     components.main.index = index
   }
   renderMain()
+  onclick="changeMain('education')"
+  document.querySelectorAll('a[onclick^="changeMain("]').forEach(element => {
+  	element.classList.remove('active')
+  })
+  document.querySelector(`a[onclick="changeMain('${main}')"]`).classList.add('active')
 }
 
 export { render, changeMain }

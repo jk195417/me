@@ -1,5 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
-@import '/assets/stylesheets/fonts.css';
+@import './fonts.scss';
+@import './text.scss';
 
 body {
  font-family: 'Taipei Sans TC Beta';
