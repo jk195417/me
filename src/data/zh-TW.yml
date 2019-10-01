@@ -1,0 +1,157 @@
+info:
+  name: 楊竑昕
+  email: yang.hong.xin.tw@gmail.com
+  birth:
+    year: 1995
+    month: 4
+    date: 17
+websites:
+  - name: Github
+    src: https://github.com/jk195417
+    fa_icon: fab fa-github
+  - name: Facebook
+    src: https://www.facebook.com/yang.hong.xin
+    fa_icon: fab fa-facebook-f
+  - name: Linkedin
+    src: https://www.linkedin.com/in/hongxin-yang
+    fa_icon: fab fa-linkedin-in
+  - name: Medium
+    src: https://medium.com/@yang.hong.xin
+    fa_icon: fab fa-medium-m
+  - name: Blog
+    src: https://blog.yang-hong-xin.com
+    fa_icon: fas fa-blog
+chapters:
+  introduction:
+    title: 自我介紹
+    content: |
+      Hi，
+      我叫楊竑昕，來自台灣高雄，出生於 1995 年。
+      在逢甲大學時，因為自控系屬於電機領域，在接觸到 8051、PLC 以及 Arduino 時需要寫程式控制硬體，那時覺得跟硬體電路設計比起來，寫程式在 debug 的過程方便多了，也因如此我開始對程式設計產生興趣，雖然我的本科成績優異，可以推徵上不錯的學校，但比起電機領域我更想要待在軟體領域，也因此我放棄了推徵，當同學們在補習班苦讀工數與自動控制時，我到資工系選修了許多基礎課程，取得了第二學程， 投入許多時間學習與實踐，將所缺乏的資料結構、作業系統、演算法、物件導向、資料庫、測試等基本功補齊。
+      大學畢業後我想直接進入業界，但家人希望我能夠考取個碩士，為了家庭和諧我報名了同在高雄的中山大學資管所考試交差，當時我把時間都花費在求職上，憑著課堂上的記憶參加考試，並無抱持任何期待，當完補充兵然後開始上班，這時卻收到了入學通知，就這樣誤打誤撞開始了我的碩士生涯，加入了郭峰淵老師的實驗室，藉由文字探勘與自然語言處理等技術，搭配之前我學的網頁前後端知識，研究社群網站的對話健康。
+      閒暇之餘我喜歡參與程式社群認識業界前輩；關注技術趨勢文章；翻翻 Github Trendings；做些 side projects。
+  skills:
+    title: 專業技能
+    content:
+      description: |
+        我主要使用 Ruby，從 2014 年開始接觸 Rails 開發網站後端。也有能力進行前端開發、編譯與打包，熟悉 Vue 框架與 Bootstrap。
+        除了使用 ORM 存取資料庫外，也熟悉 SQL 語法、索引、鎖、交易、綱要設計與正規化。
+        能以 Git 做版控、協作與部署，有部屬至 AWS、GCP 與 Heroku 的經驗。能自行閱讀英文文件使用第三方的 HTTP API，也設計過 API 讓前端架接。
+        論文以 Python 文字探勘 package 搭配 Flask 提供 web service 給 Rails 串接。
+      list:
+        - name: Ruby on Rails
+          rate: 90/100
+        - name: Ruby
+          rate: 88/100
+        - name: Bootstrap
+          rate: 88/100
+        - name: JavaScript
+          rate: 85/100
+        - name: Git
+          rate: 85/100
+        - name: Redis
+          rate: 84/100
+        - name: Postgres
+          rate: 83/100
+        - name: Vue
+          rate: 78/100
+        - name: Python
+          rate: 74/100
+        - name: Chinese
+          rate: 母語
+        - name: Taiwanese
+          rate: 母語
+        - name: 英文
+          rate: TOEIC 750/990
+  education:
+    title: 學歷
+    content:
+      - school: 國立中山大學
+        department: 資訊管理研究所
+        degree: 碩士
+        from: 2017-09-01
+        to: 2019-09-09
+        badge: https://i.imgur.com/AWB4vIg.png
+        gpa: 3.8 / 4.3
+        description:
+      - school: 逢甲大學
+        department: 自動控制工程學系
+        degree: 學士
+        from: 2013-09-01
+        to: 2017-06-31
+        badge: https://i.imgur.com/XlB0HUW.png
+        gpa: 3.6 / 4.0
+        description:
+      - school: 高雄市立高雄中學
+        department:
+        degree: 高中
+        from: 2010-09-01
+        to: 2013-06-31
+        badge: https://i.imgur.com/mUizzCU.png
+        gpa:
+        description:
+  experience:
+    title: 經歷
+    content:
+      - type: Project
+        title: caten-church
+        subtitle:
+        tags: [Rails]
+        link: https://github.com/CatenChurch/caten-church
+        image: https://i.imgur.com/wpkTLeL.png
+        from: 2016-03-29
+        to: 2019
+        description: |
+          教會網站，包含 SEO & GA，前台會員中心、活動報名、回報出席，後台會員與權限管理、發布活動與公告、小組成員出席統計、網站現況監控等功能。
+      - type: Master Thesis
+        title: 運用自然語言處理工具實作貼文分析系統觀察網路論壇，以 Dcard 為例
+        subtitle:
+        tags: [BERT, 網路爬蟲, 同質性, Dcard, 情緒分析]
+        link: https://hdl.handle.net/11296/gazcm2
+        image:
+        from: 2017-09
+        to: 2019-09
+        description: |
+          社交平台與公開論壇中的迴聲室效應易造成討論參與者認知偏差，尤其當發生在政治或時事議題討論時，更會造成極端主義以及社會分化的問題，也容易助長假新聞之傳播。
+          本篇論文將以 Dcard 論壇上的時事、明星戲劇與成人內容等三大類貼文作為案例，透過網路爬蟲、情感分析與語意分析等文字探勘技術，分析貼文與留言，藉由打造一套人機介面資訊系統，輔助專家判讀對話健康程度與判斷迴聲室效應是否存在於此。
+          透過案例探討 Dcard 這個年輕的網路論壇的環境與各個看板的現況。最後請 3 位常於網路瀏覽貼文或參與討論的網路社群專家體驗本系統並給予回饋來改進本系統。
+      - type: Project
+        title: danmu-classroom
+        subtitle:
+        tags: [Electron, Rails, Line Chatboot, Redis]
+        link: https://github.com/danmu-classroom/danmu-classroom-screen
+        image: https://i.imgur.com/3PjD5ej.png
+        from: 2018-05-07
+        to: 2019-10
+        description: |
+          彈幕教室，用 Rails 做 chatbot server，Redis 作為 Message queue，Electron 做桌面應用顯示彈幕，讓使用者透過 Line 發送彈幕至螢幕上。
+      - type: Project
+        title: lottery
+        subtitle:
+        tags: [Vue]
+        link: https://jk195417.github.io/lottery
+        image: https://i.imgur.com/TRgEbRZ.png
+        from: 2018-09
+        to: 2018-12
+        description: |
+          聖誕節或尾牙的網頁抽獎工具。
+      - type: Project
+        title: 資料庫同步
+        subtitle: 中山大學通識中心
+        tags: [Oracle, MsSQL]
+        link:
+        image:
+        from: 2018-01
+        to: 2018-12
+        description: |
+          學生資料庫為學校管理的 Oracle，而通識中心的系統則有自己 host 的 MsSQL。寫了一個腳本定時從學校 Oracle 抓取最新的資料同步至通識中心的 MsSQL 與刷卡機中。
+      - type: Job
+        title: 前後端程式開發外包人員
+        subtitle: 5XRUBY CO., LTD
+        tags: [Rails]
+        link:
+        image: https://i.imgur.com/NRFfT4N.png
+        from: 2017-08
+        to: 2017-11
+        description: |
+          與兩位資深工程師和一位 PM，在 3 個月的專案期限內為 dappei.com 開發新功能，包含前後端與資料庫。

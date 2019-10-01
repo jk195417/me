@@ -1,0 +1,161 @@
+info:
+  name: Yang Hong Xin
+  email: yang.hong.xin.tw@gmail.com
+  birth:
+    year: 1995
+    month: 4
+    date: 17
+websites:
+  - name: Github
+    src: https://github.com/jk195417
+    fa_icon: fab fa-github
+  - name: Facebook
+    src: https://www.facebook.com/yang.hong.xin
+    fa_icon: fab fa-facebook-f
+  - name: Linkedin
+    src: https://www.linkedin.com/in/hongxin-yang
+    fa_icon: fab fa-linkedin-in
+  - name: Medium
+    src: https://medium.com/@yang.hong.xin
+    fa_icon: fab fa-medium-m
+  - name: Blog
+    src: https://blog.yang-hong-xin.com
+    fa_icon: fas fa-blog
+chapters:
+  introduction:
+    title: introduction
+    content: |
+      Hi,
+      My name is Yang Hong Xin, you can call me Aaron, I was born in 1995 and live in Kaohsiung, south of Taiwan.
+      During my college at Feng Chia University, I major in automatic control engineering, writing code to control hardware, e.g PLC/8051/Arduino. As it concerns me, It is much easier to write the program instead of designing the circuits of hardware. Thus, I start interesting in programming and dive into it. I took a lot of courses from the department of computer science, invested all my available time to study and practice, catch up the basic knowledge in computer science like data structure, operating system, algorithm, object orientation, database, and testing.
+      After graduated from college and finish my military service, I joined Dr. Kuo Feng Yang's lab at National Sun Yat-Sen University for my master degree in information management. The research area I chose was to measure the health of conversation in social networks sites or online forums.
+      When I get off work, I would join the community of programmers to make new friends, read some articles in technology and browsing Github Trendings, or do my side projects for fun (I have a lot of silly ideas waiting for me to implement).
+      Thanks for reading. May the force be with you.
+  skills:
+    title: skills
+    content:
+      description: |
+        I am using Ruby as my main programming language, and I have used the framework named Ruby on Rails to develop web back-end application s since 2014. I can develop/compile/package front-end side as well, I am familiar with Vue, a front-end framework, and Bootstrap, a CSS framework.
+        I can do both by using ORM or pure SQL to access the database, also have strong knowledge in indexes, locks, transactions, designing schema, and database normalization.
+        I have experience in Git like version control, team collaboration, and deploy an application to the production server on Amazon Web Services, Google Cloud Platform, or Heroku. Can read any API or Library document, learning usage of the third-party library by myself.
+        My master thesis using Python packages for text mining, and serve it as HTTP API service by framework named Flask. and using Ruby for database manipulation(ORM), concurrency tasks management. Crawling data from Dacrd.com, saved to PostgreSQL and run the analysis, e.g. sentences similarity and sentiment analysis.
+      list:
+        - name: Ruby on Rails
+          rate: 90/100
+        - name: Ruby
+          rate: 88/100
+        - name: Bootstrap
+          rate: 88/100
+        - name: JavaScript
+          rate: 85/100
+        - name: Git
+          rate: 85/100
+        - name: Redis
+          rate: 84/100
+        - name: Postgres
+          rate: 83/100
+        - name: Vue
+          rate: 78/100
+        - name: Python
+          rate: 74/100
+        - name: TOEIC
+          rate: 750/990
+        - name: Chinese
+          rate: Native
+        - name: Taiwanese
+          rate: Native
+        - name: English
+          rate: TOEIC 750/990
+  education:
+    title: education
+    content:
+      - school: National Sun Yat-sen University
+        department: Information Management
+        degree: Master
+        from: 2017-09-01
+        to: 2019-09-09
+        badge: https://i.imgur.com/AWB4vIg.png
+        gpa: 3.8 / 4.3
+        description:
+      - school: Feng Chia University
+        department: Automatic Control Engineering
+        degree: Bachelor
+        from: 2013-09-01
+        to: 2017-06-31
+        badge: https://i.imgur.com/XlB0HUW.png
+        gpa: 3.6 / 4.0
+        description:
+      - school: Kaohsiung Senior High School
+        department:
+        degree: Senior High School
+        from: 2010-09-01
+        to: 2013-06-31
+        badge: https://i.imgur.com/mUizzCU.png
+        gpa:
+        description:
+  experience:
+    title: experience
+    content:
+      - type: Project
+        title: caten-church
+        subtitle:
+        tags: [Rails]
+        link: https://github.com/CatenChurch/caten-church
+        image: https://i.imgur.com/wpkTLeL.png
+        from: 2016-03-29
+        to: 2019-10-01
+        description: |
+          Web app for my church, including Search Engine Optimization, Google Analysis. Account management, event participantion, report group attendance in frontstage. User and permission management, posting news and event, export data, web status mointor, etc.
+      - type: Master Thesis
+        title: Building A Post Analyzer By Natural Language Processing Tool To Observe Online Forum, Using Dcard As Example.
+        subtitle:
+        tags: [Web Crawling, Sentiment Analysis, Dcard, Homophily, BERT]
+        link: https://hdl.handle.net/11296/gazcm2
+        image:
+        from: 2017-09
+        to: 2019-09
+        description: |
+          The echo chamber effect exists in social platforms and forums, will cause users stick into cognitive bias. Especially when it comes to political or trending news, it will also cause extremism, divide the people and help fake news spreading.
+          In this paper, we will build a post analyzer by web crawler, and some NLP tool like sentiment analyzer, BERT model, and semantic cluster. The system will provide assistance, assist the expert measure whether the conversation is healthy.
+          Then we will analysis these 3 topics: trending news, celebrities and adult content on Dcard for case study. Through these cases, we can explore the environment of this fresh online forum, Dcard, and the status of each sub forum. Finally, we interview 3 experts with social media domain knowledge to experience the system and share their opinions with us to improve the system.
+      - type: Project
+        title: danmu-classroom
+        subtitle:
+        tags: [Electron, Rails, Line Chatboot, Redis]
+        link: https://github.com/danmu-classroom/danmu-classroom-screen
+        image: https://i.imgur.com/3PjD5ej.png
+        from: 2018-05-07
+        to: 2019-10
+        description: |
+          Using Rails as a chatbot server, Redis as Message queue, Electron as desktop app.
+          Let user send danmu cross the screen from line.
+      - type: Project
+        title: lottery
+        subtitle:
+        tags: [Vue]
+        link: https://jk195417.github.io/lottery
+        image: https://i.imgur.com/TRgEbRZ.png
+        from: 2018-09
+        to: 2018-12
+        description: |
+          Lottery for christmas or year-end party.
+      - type: Project
+        title: Sync data between Oracle and MsSQL.
+        subtitle: National Sun Yat-sen University Center For General Education
+        tags: [Oracle, MsSQL]
+        link:
+        image:
+        from: 2018-01
+        to: 2018-12
+        description: |
+          I wrote a script to sync data between Oracle(School) and MsSQL(Center For General Education), make RFID reader work fine till now.
+      - type: Job
+        title: Project Contractor For Web Development
+        subtitle: 5XRUBY CO., LTD
+        tags: [Rails]
+        link:
+        image: https://i.imgur.com/NRFfT4N.png
+        from: 2017-08
+        to: 2017-11
+        description: |
+          collaborate with 2 senior engineers and a project manager, develop new features for dappei.com, including front-end, back-end, and database, in 3 months.

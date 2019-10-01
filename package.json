@@ -2,24 +2,28 @@
   "name": "me",
   "version": "0.0.1",
   "description": "self introduction",
-  "main": "index.js",
+  "main": "src/index.html",
   "repository": "https://github.com/jk195417/jk195417.github.io.git",
   "author": "楊竑昕 <jk195417@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "s": "parcel src/index.html",
+    "start": "parcel src/index.html",
     "predeploy": "rm -rf dist && parcel build src/index.html --public-url ./",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.0",
     "bootstrap": "^4.3.1",
+    "dayjs": "^1.8.16",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.7"
+    "popper.js": "^1.14.7",
+    "vue": "^2.6.10",
+    "vue-hot-reload-api": "^2.3.4"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.10.0",
-    "gh-pages": "~2.0",
+    "@vue/component-compiler-utils": "^3.0.0",
     "parcel-bundler": "^1.12.3",
-    "sass": "^1.22.9"
+    "sass": "^1.22.12",
+    "vue-template-compiler": "^2.6.10"
   }
 }

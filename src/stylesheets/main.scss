@@ -1,15 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
-@import './fonts.scss';
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
 
-.ti-2 {
-   text-indent: 2em;
-}
-
-.nav-main {
-  &.active {
-    border-width: 2px;
-    border-color: $dark;
-    border-style: solid;
-    border-radius: 3px;
-  }
+body {
+  font-family: 'Noto Sans TC', sans-serif;
 }
