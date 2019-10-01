@@ -1,5 +1,5 @@
 <template lang="html">
-<a :class="{ 'active': chapter === current_chapter }"
+<a :class="{ 'active': !show_chapters && chapter === current_chapter }"
    class="nav-item nav-link text-dark text-capitalize"
    :href="'#' + chapter">
   {{ title }}
@@ -8,6 +8,6 @@
 
 <script>
 export default {
-  props: ['chapter', 'current_chapter', 'title']
+  props: ['chapter', 'current_chapter', 'show_chapters', 'title']
 }
 </script>

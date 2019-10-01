@@ -2,7 +2,8 @@
   <div class="container pt-2">
     <navbar :chapters="data.chapters"
             :websites="data.websites"
-            :current_chapter.sync="current_chapter">
+            :current_chapter.sync="current_chapter"
+            :show_chapters="show_chapters">
     </navbar>
     <chapters :chapters="data.chapters"
               :current_chapter="current_chapter"

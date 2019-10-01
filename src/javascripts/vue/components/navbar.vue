@@ -4,6 +4,7 @@
     <chapter v-for="(chapter, key) in chapters"
           :chapter="key"
           :current_chapter="current_chapter"
+          :show_chapters="show_chapters"
           :title="chapter.title"
           @click.native="$emit('update:current_chapter', key)">
     </chapter>
@@ -21,7 +22,7 @@
 import chapter from './navbar/chapter.vue'
 import website from './navbar/website.vue'
 export default {
-  props: ['chapters', 'current_chapter', 'websites'],
+  props: ['chapters', 'current_chapter', 'show_chapters', 'websites'],
   components: {
     'chapter': chapter,
     'website': website
