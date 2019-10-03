@@ -2,10 +2,10 @@
 <div>
   <component v-for="(chapter, key) in chapters"
              :is="key"
-             v-if="show_chapters || key === current_chapter"
+             v-if="print_mode || key === current_chapter"
              :title="chapter.title"
              :content="chapter.content"
-             :show_chapters="show_chapters">
+             :print_mode="print_mode">
   </component>
 </div>
 </template>
@@ -17,7 +17,7 @@ import skills from './chapters/skills.vue'
 import experience from './chapters/experience.vue'
 
 export default {
-  props: ['chapters', 'current_chapter', 'show_chapters'],
+  props: ['chapters', 'current_chapter', 'print_mode'],
   components: {
     'introduction': introduction,
     'education': education,

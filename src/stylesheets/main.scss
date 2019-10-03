@@ -4,3 +4,12 @@
 body {
   font-family: 'Noto Sans TC', sans-serif;
 }
+
+@media print {
+  main, .education, .experience {
+    break-inside: avoid;
+  }
+  footer {
+    display: none;
+  }
+}

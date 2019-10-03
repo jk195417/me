@@ -1,6 +1,6 @@
 <template lang="html">
   <main id="experience" class="container">
-    <h3 v-if="show_chapters" class="text-capitalize font-weight-normal my-4">{{title}}</h3>
+    <h3 v-if="print_mode" class="text-capitalize font-weight-normal my-4">{{title}}</h3>
     <div v-for="experience in content" class="experience">
       <h5 class="text-capitalize font-weight-normal my-2">
         <i class="fas fa-folder"></i> {{ experience.type }}

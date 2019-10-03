@@ -1,6 +1,6 @@
 <template lang="html">
 <main id="education" class="container">
-  <h3 v-if="show_chapters" class="text-capitalize font-weight-normal my-4">{{title}}</h3>
+  <h3 v-if="print_mode" class="text-capitalize font-weight-normal my-4">{{title}}</h3>
   <div v-for="education in content" class="education">
     <h5 class="my-2 text-capitalize font-weight-normal">
       <i class="fas fa-graduation-cap"></i> {{ education.degree }}

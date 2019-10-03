@@ -3,16 +3,16 @@
     <navbar :chapters="data.chapters"
             :websites="data.websites"
             :current_chapter.sync="current_chapter"
-            :show_chapters="show_chapters">
+            :print_mode="print_mode">
     </navbar>
     <chapters :chapters="data.chapters"
               :current_chapter="current_chapter"
-              :show_chapters="show_chapters">
+              :print_mode="print_mode">
     </chapters>
     <foooter :info="data.info"
              :i18n="i18n"
              :current_lang.sync="current_lang"
-             :show_chapters.sync="show_chapters">
+             :print_mode.sync="print_mode">
     </foooter>
   </div>
 </template>
@@ -21,7 +21,7 @@
 import navbar from './components/navbar.vue'
 import chapters from './components/chapters.vue'
 import footer from './components/footer.vue'
-import i18n from '../../data/*.yml'
+import i18n from '../../../data/*.yml'
 
 export default {
   name: 'App',
@@ -34,7 +34,7 @@ export default {
     i18n: i18n,
     current_lang: 'zh-TW',
     current_chapter: 'introduction',
-    show_chapters: false
+    print_mode: false
   }),
   computed: {
     data: function () {
