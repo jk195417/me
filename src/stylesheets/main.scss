@@ -6,7 +6,7 @@ body {
 }
 
 @media print {
-  main, .education, .experience {
+  #introduction, #skills, .education, .experience {
     break-inside: avoid;
   }
   footer {
