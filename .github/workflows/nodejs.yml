@@ -3,12 +3,7 @@ name: Node.js CI
 on:   
   push:
     branches:
-      - lagagain
-  # Also trigger on page_build, as well as release created events
-  page_build:
-  release:
-    types: # This configuration does not affect the page_build event above
-      - created
+      - data
 jobs:
   build:
 
@@ -28,12 +23,12 @@ jobs:
     - run: npm run build --if-present\
       env:
         CI: true
-        
+
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v1.2.5
       with:
           # Build directory to deploy
           build_dir:  ./dist
-          keep_history: true
+          keep_history: false
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
