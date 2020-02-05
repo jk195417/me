@@ -1,7 +1,9 @@
-name: Node.js CI
+name: Deploy to Github(gh-page)
 
-on: [push]
-
+on:   
+  push:
+    branches:
+      - data
 jobs:
   build:
 
@@ -21,12 +23,13 @@ jobs:
     - run: npm run build --if-present\
       env:
         CI: true
-        
+
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v1.2.5
       with:
           # Build directory to deploy
           build_dir:  ./dist
-          keep_history: true
+          keep_history: false
       env:
+          GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
