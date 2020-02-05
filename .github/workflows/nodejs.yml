@@ -32,3 +32,4 @@ jobs:
           keep_history: false
       env:
           GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
