@@ -23,7 +23,7 @@
       </p>
       <div class="container">
         <p v-for="sentence in sentences(experience.description)">{{ sentence }}</p>
-        <img v-if="experience.image" :src="experience.image" class="border border-dark">
+        <a v-if="experience.image" :href="experience.link" ><img :src="experience.image" class="border border-dark"></a>
       </div>
       <hr>
     </div>
