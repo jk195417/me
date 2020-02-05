@@ -1,7 +1,14 @@
 name: Node.js CI
 
-on: [push]
-
+on:   
+  push:
+    branches:
+      - lagagain
+  # Also trigger on page_build, as well as release created events
+  page_build:
+  release:
+    types: # This configuration does not affect the page_build event above
+      - created
 jobs:
   build:
 
