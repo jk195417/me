@@ -29,7 +29,7 @@ chapters:
       My name is Yang Hong Xin, you can call me Aaron, I was born in 1995 and live in Kaohsiung, south of Taiwan.
       During my college at Feng Chia University, I major in automatic control engineering, writing code to control hardware, e.g PLC/8051/Arduino. As it concerns me, It is much easier to write the program instead of designing the circuits of hardware. Thus, I start interesting in programming and dive into it. I took a lot of courses from the department of computer science, invested all my available time to study and practice, catch up the basic knowledge in computer science like data structure, operating system, algorithm, object orientation, database, and testing.
       After graduated from college and finish my military service, I joined Dr. Kuo Feng Yang's lab at National Sun Yat-Sen University for my master degree in information management. The research area I chose was to measure the health of conversation in social networks sites or online forums.
-      When I get off work, I would join the community of programmers to make new friends, read some articles in technology and browsing Github Trendings, or do my side projects for fun (I have a lot of silly ideas waiting for me to implement).
+      When I get off work, I would join the community of programmers to make new friends, read some articles in technology and browsing Github Trending, or do my side projects for fun (I have a lot of silly ideas waiting for me to implement).
       Thanks for reading. May the force be with you.
   skills:
     title: skills
@@ -62,6 +62,8 @@ chapters:
           rate: 80/100
         - name: Vue
           rate: 78/100
+        - name: RxJS
+          rate: 75/100
         - name: Python
           rate: 74/100
         - name: TOEIC
@@ -109,7 +111,7 @@ chapters:
         link:
         image:
         from: 2019-11
-        to: present
+        to: 2021
         description: |
           維護一個每日平均 2000 位跨國使用者的大型變更管理與簽核系統，並串接其他系統以完成簽核成功後自動變更的需求，
           在這段期間我透過重構系統的脆弱面改善了近千倍的系統效能，如：
