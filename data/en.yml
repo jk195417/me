@@ -40,20 +40,26 @@ chapters:
         I have experience in Git like version control, team collaboration, and deploy an application to the production server on Amazon Web Services, Google Cloud Platform, or Heroku. Can read any API or Library document, learning usage of the third-party library by myself.
         My master thesis using Python packages for text mining, and serve it as HTTP API service by framework named Flask. and using Ruby for database manipulation(ORM), concurrency tasks management. Crawling data from Dacrd.com, saved to PostgreSQL and run the analysis, e.g. sentences similarity and sentiment analysis.
       list:
-        - name: Ruby on Rails
+        - name: JavaScript
           rate: 90/100
+        - name: TypeScript
+          rate: 90/100
+        - name: Ruby on Rails
+          rate: 88/100
         - name: Ruby
           rate: 88/100
         - name: Bootstrap
           rate: 88/100
-        - name: JavaScript
-          rate: 85/100
         - name: Git
+          rate: 85/100
+        - name: Angular
           rate: 85/100
         - name: Redis
           rate: 84/100
         - name: Postgres
           rate: 83/100
+        - name: C#
+          rate: 80/100
         - name: Vue
           rate: 78/100
         - name: Python
@@ -96,6 +102,20 @@ chapters:
   experience:
     title: experience
     content:
+      - type: Job
+        title: IT Software Engineer
+        subtitle: Micron
+        tags: [.Net, Angular]
+        link:
+        image:
+        from: 2019-11
+        to: present
+        description: |
+          維護一個每日平均 2000 位跨國使用者的大型變更管理與簽核系統，並串接其他系統以完成簽核成功後自動變更的需求，
+          在這段期間我透過重構系統的脆弱面改善了近千倍的系統效能，如：
+          抓出 database n+1 query 並優化之；
+          透過分頁與延遲載入提升前端頁面載入速度，進而改善使用者體驗；
+          使用 Azure 雲端服務替代不穩定的相依資料源，進而提升系統的穩定度。
       - type: Project
         title: caten-church
         subtitle:

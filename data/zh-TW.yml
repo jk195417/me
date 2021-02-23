@@ -39,20 +39,26 @@ chapters:
         能以 Git 做版控、協作與部署，有部屬至 AWS、GCP 與 Heroku 的經驗。能自行閱讀英文文件使用第三方的 HTTP API，也設計過 API 讓前端架接。
         論文以 Python 文字探勘 package 搭配 Flask 提供 web service 給 Rails 串接。
       list:
-        - name: Ruby on Rails
+        - name: JavaScript
           rate: 90/100
+        - name: TypeScript
+          rate: 90/100
+        - name: Ruby on Rails
+          rate: 88/100
         - name: Ruby
           rate: 88/100
         - name: Bootstrap
           rate: 88/100
-        - name: JavaScript
-          rate: 85/100
         - name: Git
+          rate: 85/100
+        - name: Angular
           rate: 85/100
         - name: Redis
           rate: 84/100
         - name: Postgres
           rate: 83/100
+        - name: C#
+          rate: 80/100
         - name: Vue
           rate: 78/100
         - name: Python
@@ -93,6 +99,20 @@ chapters:
   experience:
     title: 經歷
     content:
+      - type: Job
+        title: IT Software Engineer
+        subtitle: Micron
+        tags: [.Net, Angular]
+        link:
+        image:
+        from: 2019-11
+        to: present
+        description: |
+          維護一個每日平均 2000 位跨國使用者的大型變更管理與簽核系統，並串接其他系統以完成簽核成功後自動變更的需求，
+          在這段期間我透過重構系統的脆弱面改善了近千倍的系統效能，如：
+          抓出 database n+1 query 並優化之；
+          透過分頁與延遲載入提升前端頁面載入速度，進而改善使用者體驗；
+          使用 Azure 雲端服務替代不穩定的相依資料源，進而提升系統的穩定度。
       - type: Project
         title: caten-church
         subtitle:
