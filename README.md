@@ -2,7 +2,7 @@
 
 Create a resume by writing a `.yml` file.
 
-![index](./doc/images/index.png)
+![index](./docs/images/index.png)
 
 ## Installation
 
@@ -29,7 +29,7 @@ Create a resume by writing a `.yml` file.
 
     Feel free to add a `.yml` file in this folder to create a new version of resume.
 
-    ![i18n](./doc/images/i18n.png)
+    ![i18n](./docs/images/i18n.png)
 
 3.  Preview your resume in <http://localhost:1234>
 
@@ -41,15 +41,15 @@ Create a resume by writing a `.yml` file.
 
 1.  Click **Print Mode** button (at the bottom right)
 
-    ![print mode](./doc/images/print_mode.png)
+    ![print mode](./docs/images/print_mode.png)
 
 2.  Right click the browser and print it
 
-    ![right click](./doc/images/right_click.png)
+    ![right click](./docs/images/right_click.png)
 
 3.  Save it as a `.pdf` file.
 
-    ![print](./doc/images/print.png)
+    ![print](./docs/images/print.png)
 
 ## Deployment
 
