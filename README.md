@@ -22,16 +22,16 @@ Create a resume by writing a `.yml` file.
     ```
 
 ## Usage
+1.  Create and Checkout New Branch `data`.  Edit you information on the branch.
+2.  Replace my information with yours in `data/en.yml` and `data/zh-TW.yml`
 
-1.  Replace my information with yours in `data/en.yml` and `data/zh-TW.yml`
-
-2.  Each `$name.yml` file will create a **$name** version of resume. In my case, it will be **zh-TW** and **en**.
+3.  Each `$name.yml` file will create a **$name** version of resume. In my case, it will be **zh-TW** and **en**.
 
     Feel free to add a `.yml` file in this folder to create a new version of resume.
 
     ![i18n](./docs/images/i18n.png)
 
-3.  Preview your resume in <http://localhost:1234>
+4.  Preview your resume in <http://localhost:1234>
 
     ```bash
     yarn start
@@ -60,6 +60,13 @@ yarn deploy
 ```
 
 <http://$username.github.io/me>
+
+## Auto Deploy to GitHub Page(gh-page)
+
+If you edit your information on data branch, when you push this branch, will auto deploy Page to gh-page.
+
+But there is a problem([see this issue](https://github.com/crazy-max/ghaction-github-pages/issues/1#issuecomment-531889292)), GitHub team [currently working on it](https://github.community/t5/GitHub-Actions/Github-action-not-triggering-gh-pages-upon-push/td-p/26869).
+
 
 ## Build With
 
