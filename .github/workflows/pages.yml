@@ -20,6 +20,8 @@ jobs:
           node-version-file: ".nvmrc"
           cache: "npm"
       - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
       - run: npm run build
       - uses: peaceiris/actions-gh-pages@v4
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'

@@ -14,6 +14,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Replace Parcel 1 with Vite, use npm instead of Yarn
 - Deploy to GitHub Pages by GitHub Actions instead of the `gh-pages` package
 - Require Node.js 22+
+- Rewrite every component with `<script setup>` and TypeScript, with types for the YAML data
+- Rename components and props to Vue conventions (`AppFooter` instead of `foooter`, camelCase props); the YAML format is unchanged
+- Use buttons for the chapter, language and print mode switches instead of `javascript:void(0)` links
+
+### Added
+
+- Tests with Vitest, including a check that every date in `data/*.yml` exists
+- Type checking and tests in CI
+
+### Fixed
+
+- Show a bare year such as `2019` as a year instead of 1970/01
+- Read YAML dates in UTC so months stay correct in every time zone
 
 ### Removed
 

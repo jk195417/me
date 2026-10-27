@@ -37,6 +37,13 @@ Create a resume by writing a `.yml` file.
     npm run dev
     ```
 
+4.  Check types and run the tests (also run by CI on every pull request)
+
+    ```bash
+    npm run typecheck
+    npm test
+    ```
+
 ### Download PDF
 
 1.  Click **Print Mode** button (at the bottom right)
@@ -61,11 +68,12 @@ Set your repository's **Settings → Pages → Source** to the `gh-pages` branch
 
 ## Build With
 
--   [Vue 3](https://vuejs.org) - JavaScript framework
+-   [Vue 3](https://vuejs.org) - JavaScript framework, with `<script setup>` and TypeScript
 -   [Bootstrap 5](https://getbootstrap.com) - Front-End component library
 -   [Font Awesome](https://fontawesome.com) - Icons
 -   [Day.js](https://github.com/iamkun/dayjs) - Date library
 -   [Vite](https://vite.dev) - Build tool
+-   [Vitest](https://vitest.dev) - Tests
 
 ## Contributing
 
