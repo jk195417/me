@@ -15,10 +15,10 @@ Create a resume by writing a `.yml` file.
     cd me
     ```
 
-3.  Using [Yarn](https://yarnpkg.com) to install dependencies
+3.  Install dependencies (requires [Node.js](https://nodejs.org) 22+)
 
     ```bash
-    yarn install
+    npm install
     ```
 
 ## Usage
@@ -31,10 +31,17 @@ Create a resume by writing a `.yml` file.
 
     ![i18n](./docs/images/i18n.png)
 
-3.  Preview your resume in <http://localhost:1234>
+3.  Preview your resume in <http://localhost:5173>
 
     ```bash
-    yarn start
+    npm run dev
+    ```
+
+4.  Check types and run the tests (also run by CI on every pull request)
+
+    ```bash
+    npm run typecheck
+    npm test
     ```
 
 ### Download PDF
@@ -53,22 +60,20 @@ Create a resume by writing a `.yml` file.
 
 ## Deployment
 
-Deploy to your [Github Pages](https://pages.github.com)
+Every push to `main` is built and deployed to the `gh-pages` branch by GitHub Actions
+(see [`.github/workflows/pages.yml`](./.github/workflows/pages.yml)).
 
-```bash
-yarn deploy
-```
-
-<http://$username.github.io/me>
+Set your repository's **Settings → Pages → Source** to the `gh-pages` branch, then visit
+<https://$username.github.io/me>
 
 ## Build With
 
--   [Vue](https://vuejs.org) - JavaScript framework
--   [Bootstrap](https://getbootstrap.com) - Front-End component library
+-   [Vue 3](https://vuejs.org) - JavaScript framework, with `<script setup>` and TypeScript
+-   [Bootstrap 5](https://getbootstrap.com) - Front-End component library
 -   [Font Awesome](https://fontawesome.com) - Icons
 -   [Day.js](https://github.com/iamkun/dayjs) - Date library
--   [Parcel](https://parceljs.org) - Pack and bundle modules
--   [gh-pages](https://github.com/tschaub/gh-pages) - publishing files to gh-pages branch
+-   [Vite](https://vite.dev) - Build tool
+-   [Vitest](https://vitest.dev) - Tests
 
 ## Contributing
 
