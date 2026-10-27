@@ -141,14 +141,14 @@ chapters:
       - type: Project
         title: danmu-classroom
         subtitle:
-        tags: [Electron, Rails, Line Chatboot, Redis]
-        link: https://github.com/danmu-classroom/danmu-classroom-screen
-        image: https://i.imgur.com/3PjD5ej.png
+        tags: [TypeScript, Cloudflare Workers, Electron, LINE Bot]
+        link: https://github.com/danmu-classroom/danmu-classroom
+        image: https://raw.githubusercontent.com/danmu-classroom/danmu-classroom/main/docs/images/screen-browser.png
         from: 2018-05-07
-        to: 2019-10
+        to: Present
         description: |
-          Using Rails as a chatbot server, Redis as Message queue, Electron as desktop app.
-          Let user send danmu cross the screen from line.
+          Danmu Classroom lets the audience send messages from their phone, computer or LINE, and the messages fly across the speaker's screen as danmu. No install, no sign-up.
+          Rewritten in 2026 on Cloudflare Workers (Hono, Durable Objects, D1) from the original 2018 Rails + Redis version, pushing danmu over WebSocket to a transparent Electron desktop app or a browser screen that works as an OBS source.
       - type: Project
         title: lottery
         subtitle:

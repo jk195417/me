@@ -139,13 +139,14 @@ chapters:
       - type: Project
         title: danmu-classroom
         subtitle:
-        tags: [Electron, Rails, Line Chatboot, Redis]
-        link: https://github.com/danmu-classroom/danmu-classroom-screen
-        image: https://i.imgur.com/3PjD5ej.png
+        tags: [TypeScript, Cloudflare Workers, Electron, LINE Bot]
+        link: https://github.com/danmu-classroom/danmu-classroom
+        image: https://raw.githubusercontent.com/danmu-classroom/danmu-classroom/main/docs/images/screen-browser.png
         from: 2018-05-07
-        to: 2019-10
+        to: 至今
         description: |
-          彈幕教室，用 Rails 做 chatbot server，Redis 作為 Message queue，Electron 做桌面應用顯示彈幕，讓使用者透過 Line 發送彈幕至螢幕上。
+          彈幕教室：讓台下的人用手機、電腦或 LINE 傳訊息，訊息會變成彈幕飛過講者的螢幕，不用安裝、不用註冊。
+          2026 年以 Cloudflare Workers（Hono、Durable Objects、D1）全面重寫原本 2018 年的 Rails + Redis 版本，透過 WebSocket 推送彈幕，並提供透明的 Electron 桌面 app 與可當 OBS 來源的瀏覽器版螢幕。
       - type: Project
         title: lottery
         subtitle:
