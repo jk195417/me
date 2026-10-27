@@ -30,17 +30,19 @@ chapters:
       At Feng Chia University I majored in automatic control engineering and fell in love with programming while writing code for 8051, PLC and Arduino. I completed a second program in Computer Science to catch up on data structures, operating systems, algorithms, object orientation and databases.
       For my master's degree I joined Dr. Kuo Feng Yang's lab at National Sun Yat-sen University, researching conversation health on social networks with text mining and natural language processing.
       I joined Micron in 2019. I build and run a workflow and change management system used by 3,000+ people every day across 7 regions, and I'm currently the architect of a 20-person team. I'm well-versed in .NET Core, Angular, cloud and containers (Kubernetes, Azure), and I care deeply about code quality, testing culture and developer experience.
+      Strengths: complex problem solving and effective communication.
       Thanks for reading. May the force be with you.
   skills:
     title: skills
     content:
       description: |
-        Backend: C#, .NET Core, Entity Framework Core, Ruby on Rails, Python, Flask, Node.js, RESTful APIs, message queues, background jobs.
-        Frontend: TypeScript, JavaScript, Angular, RxJS, Vue, Sass, Electron.
-        Testing and quality: xUnit, Moq, AutoFixture, FluentAssertions, Jest, ESLint, Prettier, SonarLint, dotnet format.
+        Backend: C#, .NET Core, Entity Framework Core, AutoMapper, FluentValidation, Ruby on Rails, Python, Flask, Node.js, RESTful APIs, message queues, background jobs.
+        Frontend: TypeScript, JavaScript, Angular, RxJS, Vue, Bootstrap, Sass, Electron.
+        Testing and quality: xUnit, Moq, AutoFixture, FluentAssertions, Jest, ESLint, Prettier, husky, SonarLint, dotnet analyzers, dotnet format.
         DevOps and containers: Jenkins, Octopus, Docker, Docker Compose, Podman, Helm, Kubernetes, OpenShift.
-        Cloud: Azure (AD, AKS, Red Hat OpenShift, Key Vault, Service Bus, Blob Storage, Cache for Redis, Application Insights, Private Link), Microsoft Graph API, Google Cloud, Cloudflare DNS.
+        Cloud: Azure (AD, AKS, Red Hat OpenShift, Key Vault, Service Bus, Blob Storage, Cache for Redis, Application Insights, Private Link), Microsoft Graph API, Google Cloud, Cloudflare Workers, Cloudflare DNS.
         Data: MSSQL, PostgreSQL, MySQL, MongoDB, Redis, RabbitMQ, Snowflake.
+        Text mining and NLP: sentiment analysis, Chinese word segmentation, BERT embeddings, statistics, linear algebra.
         Practices: OOP, SOLID, KISS, SSOT, dependency injection, TDD, design patterns, one-way data flow.
       list:
         - name: C# / .NET Core
@@ -76,7 +78,7 @@ chapters:
         department: Automatic Control Engineering
         degree: Bachelor
         from: 2013-09-01
-        to: 2017-06-31
+        to: 2017-06-30
         badge: https://i.imgur.com/XlB0HUW.png
         gpa: 3.6 / 4.0
         description:
@@ -84,7 +86,7 @@ chapters:
         department:
         degree: Senior High School
         from: 2010-09-01
-        to: 2013-06-31
+        to: 2013-06-30
         badge: https://i.imgur.com/mUizzCU.png
         gpa:
         description:
@@ -101,11 +103,11 @@ chapters:
         to: Present
         description: |
           2026-10 – Present: Staff AI Engineer; 2025-10 – 2026-10: Staff Software Engineer; 2023-10 – 2025-10: Senior Software Engineer; 2019-11 – 2023-10: Software Engineer.
-          Built and maintained an internal workflow and change management system serving 3,000+ daily active users across 7 regions, integrated with manufacturing systems to validate, approve and apply changes automatically.
-          Architect of a 20-person team. Previously led a project with 4 developers, hosting Scrum meetings, code reviews and pair programming. Provide architecture designs and tech stack consulting for internal and external teams.
-          Migrated services from Windows Server IIS to Kubernetes with Jenkins, Octopus, Docker and Helm, and adopted Azure services (AD, Key Vault, Service Bus, Blob Storage, Cache for Redis, Application Insights).
-          Improved system performance by nearly 1,000x by fixing database N+1 queries; moved 1 TB of base64 files out of the database, cutting CPU from 100% to under 10% and RAM from 64 GB to 8 GB; rewrote ETL jobs, cutting the daily Snowflake upload from 7 hours to 1 minute.
-          Introduced unit testing, linters and formatters enforced by git hooks and CI, and cut the team's on-call effort from 60+ hours to under 5 hours a week by fixing root causes.
+          Core system: built and maintained an internal workflow and change management system serving 3,000+ daily active users across 7 regions, integrated with manufacturing systems to validate, approve and apply changes automatically. Improved performance by nearly 1,000x by fixing weak spots such as database N+1 queries.
+          Team leadership: architect of a 20-person team. Previously led a project with 4 developers, hosting Scrum meetings, code reviews and pair programming. Interview users to understand the business domain, document processes, and provide architecture designs and tech stack consulting for internal and external teams.
+          Architecture and cloud: migrated services from Windows Server IIS to Kubernetes with Jenkins, Octopus, Docker and Helm; adopted Azure services (AD, Key Vault, Service Bus, Blob Storage, Cache for Redis, Application Insights, Microsoft Graph API); built a job queue service and a three-layer cache; improved observability with health checks, Application Insights and Kubernetes probes, and centralized all logging.
+          Performance: moved 1 TB of base64 files out of the database, cutting CPU from 100% to under 10% and RAM from 64 GB to 8 GB; rewrote ETL jobs, cutting the daily Snowflake upload from 7 hours to 1 minute.
+          Quality and operations: introduced unit testing, linters and formatters enforced by git hooks and CI, and cut the team's on-call effort from 60+ hours to under 5 hours a week by grouping incidents by cause and fixing root causes.
       - type: Project
         title: bisection-anything
         subtitle:
@@ -116,28 +118,6 @@ chapters:
         to: Present
         description: |
           Rank anything by pairwise comparison: answer "which one do you like more?" until you get a champion or a full ranking.
-      - type: Project
-        title: caten-church
-        subtitle:
-        tags: [Rails]
-        link: https://github.com/CatenChurch/caten-church
-        image: https://i.imgur.com/wpkTLeL.png
-        from: 2016-03-29
-        to: 2019-10-01
-        description: |
-          Web app for my church, including Search Engine Optimization, Google Analysis. Account management, event participantion, report group attendance in frontstage. User and permission management, posting news and event, export data, web status mointor, etc.
-      - type: Master Thesis
-        title: Building A Post Analyzer By Natural Language Processing Tool To Observe Online Forum, Using Dcard As Example.
-        subtitle:
-        tags: [Web Crawling, Sentiment Analysis, Dcard, Homophily, BERT]
-        link: https://hdl.handle.net/11296/gazcm2
-        image:
-        from: 2017-09
-        to: 2019-09
-        description: |
-          The echo chamber effect exists in social platforms and forums, will cause users stick into cognitive bias. Especially when it comes to political or trending news, it will also cause extremism, divide the people and help fake news spreading.
-          In this paper, we will build a post analyzer by web crawler, and some NLP tool like sentiment analyzer, BERT model, and semantic cluster. The system will provide assistance, assist the expert measure whether the conversation is healthy.
-          Then we will analysis these 3 topics: trending news, celebrities and adult content on Dcard for case study. Through these cases, we can explore the environment of this fresh online forum, Dcard, and the status of each sub forum. Finally, we interview 3 experts with social media domain knowledge to experience the system and share their opinions with us to improve the system.
       - type: Project
         title: danmu-classroom
         subtitle:
@@ -150,6 +130,38 @@ chapters:
           Danmu Classroom lets the audience send messages from their phone, computer or LINE, and the messages fly across the speaker's screen as danmu. No install, no sign-up.
           Rewritten in 2026 on Cloudflare Workers (Hono, Durable Objects, D1) from the original 2018 Rails + Redis version, pushing danmu over WebSocket to a transparent Electron desktop app or a browser screen that works as an OBS source.
       - type: Project
+        title: caten-church
+        subtitle:
+        tags: [Rails]
+        link: https://github.com/CatenChurch/caten-church
+        image: https://i.imgur.com/wpkTLeL.png
+        from: 2016-03-29
+        to: 2019-10-01
+        description: |
+          Website for my church, with SEO and Google Analytics. Members can manage their accounts, sign up for events and report group attendance; admins manage users and permissions, publish news and events, export data and monitor the site.
+      - type: Master Thesis
+        title: Building A Post Analyzer By Natural Language Processing Tool To Observe Online Forum, Using Dcard As Example.
+        subtitle:
+        tags: [Web Crawling, Sentiment Analysis, Dcard, Homophily, BERT]
+        link: https://hdl.handle.net/11296/gazcm2
+        image:
+        from: 2017-09
+        to: 2019-09
+        description: |
+          Echo chambers on social platforms and forums push users into cognitive bias. On political or trending topics they can lead to extremism, divide society and help fake news spread.
+          I built a post analyzer with a web crawler and NLP tools, including sentiment analysis, BERT embeddings and semantic clustering, to help experts judge whether a conversation is healthy.
+          The case study covers three topics on Dcard: trending news, celebrities and adult content, exploring the environment of each sub-forum. Three social media experts then tried the system and gave feedback to improve it.
+      - type: Project
+        title: chinese-segmentation-as-service
+        subtitle:
+        tags: [Python, Flask, jieba, SnowNLP, pkuseg]
+        link: https://github.com/jk195417/chinese-segmentation-as-service
+        image:
+        from: 2019-04
+        to: 2019-09
+        description: |
+          Serves jieba, SnowNLP and pkuseg Chinese word segmentation as an HTTP API with Flask, used by the Rails app in my master's thesis for text preprocessing.
+      - type: Project
         title: lottery
         subtitle:
         tags: [Vue]
@@ -158,9 +170,9 @@ chapters:
         from: 2018-09
         to: 2018-12
         description: |
-          Lottery for christmas or year-end party.
+          A lottery-drawing web tool for Christmas and year-end parties.
       - type: Project
-        title: Sync data between Oracle and MsSQL.
+        title: Sync data between Oracle and MsSQL
         subtitle: National Sun Yat-sen University Center For General Education
         tags: [Oracle, MsSQL]
         link:
@@ -168,7 +180,7 @@ chapters:
         from: 2018-01
         to: 2018-12
         description: |
-          I wrote a script to sync data between Oracle(School) and MsSQL(Center For General Education), make RFID reader work fine till now.
+          Wrote a scheduled script that syncs student data from the university's Oracle database to the center's MsSQL database and RFID card readers.
       - type: Job
         title: Full Stack Engineer (Contract)
         subtitle: 5xRuby, Taipei

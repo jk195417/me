@@ -30,16 +30,20 @@ chapters:
       大學就讀逢甲自控系，因為寫 8051、PLC 與 Arduino 而愛上寫程式，修完資工第二學程，補齊資料結構、作業系統、演算法、物件導向與資料庫等基本功。
       碩士在中山資管所，加入郭峰淵老師的實驗室，以文字探勘與自然語言處理研究社群網站的對話健康。
       2019 年加入美光至今，負責服務 7 個地區、每日 3000+ 位使用者的變更管理與簽核系統，目前擔任 20 人團隊的 Architect。專長是 .NET Core、Angular、雲端與容器化（Kubernetes、Azure），以及建立測試與 CI/CD 文化。
+      個人優勢：擅長拆解複雜問題，溝通清楚有效。
       閒暇之餘我喜歡參與程式社群認識業界前輩；關注技術趨勢文章；翻翻 Github Trending；做些 side projects。
   skills:
     title: 專業技能
     content:
       description: |
-        C# / .NET Core：美光主力後端語言，以 .NET Core、Entity Framework Core 開發 RESTful API，以 xUnit、Moq、AutoFixture、FluentAssertions 撰寫單元測試，熟悉依賴注入、SOLID 與設計模式。
-        前端：以 Angular、RxJS、TypeScript 開發內部系統前端，也熟悉 Vue 與 Bootstrap，導入 ESLint、Prettier、Jest 與 husky git hook 統一團隊程式風格。
-        DevOps / 雲端：以 Jenkins、Octopus、Docker、Helm 將系統從 Windows Server IIS 遷移至 Kubernetes，導入 Azure AD、Key Vault、Service Bus、Blob Storage、Cache for Redis、Application Insights。
-        資料庫與效能：使用 MSSQL、PostgreSQL、MySQL、MongoDB、Redis、RabbitMQ、Snowflake，熟悉索引、鎖、交易、綱要設計與正規化，擅長抓出 N+1 查詢等效能瓶頸。
-        Ruby / Rails：2014 年開始以 Rails 開發網站後端；Python：碩士論文以 Python 文字探勘套件搭配 Flask 提供 Web Service 給 Rails 串接。
+        後端：C#、.NET Core、Entity Framework Core、AutoMapper、FluentValidation、Ruby on Rails、Python、Flask、Node.js、RESTful API、Message Queue、背景工作。
+        前端：TypeScript、JavaScript、Angular、RxJS、Vue、Bootstrap、Sass、Electron。
+        測試與品質：xUnit、Moq、AutoFixture、FluentAssertions、Jest、ESLint、Prettier、husky、SonarLint、dotnet analyzer、dotnet format。
+        DevOps 與容器：Jenkins、Octopus、Docker、Docker Compose、Podman、Helm、Kubernetes、OpenShift。
+        雲端：Azure（AD、AKS、Red Hat OpenShift、Key Vault、Service Bus、Blob Storage、Cache for Redis、Application Insights、Private Link）、Microsoft Graph API、Google Cloud、Cloudflare Workers、Cloudflare DNS。
+        資料：MSSQL、PostgreSQL、MySQL、MongoDB、Redis、RabbitMQ、Snowflake；熟悉索引、鎖、交易、綱要設計與正規化。
+        文字探勘與 NLP：情緒分析、中文斷詞、BERT 詞向量；研究所修習統計、線性代數、影像處理與自然語言處理。
+        開發實踐：OOP、SOLID、KISS、SSOT、依賴注入、TDD、設計模式、單向資料流。
       list:
         - name: C# / .NET Core
           rate: ★★★★
@@ -74,7 +78,7 @@ chapters:
         department: 自動控制工程學系
         degree: 學士
         from: 2013-09-01
-        to: 2017-06-31
+        to: 2017-06-30
         badge: https://i.imgur.com/XlB0HUW.png
         gpa: 3.6 / 4.0
         description:
@@ -82,7 +86,7 @@ chapters:
         department:
         degree: 高中
         from: 2010-09-01
-        to: 2013-06-31
+        to: 2013-06-30
         badge: https://i.imgur.com/mUizzCU.png
         gpa:
         description:
@@ -99,11 +103,11 @@ chapters:
         to: 至今
         description: |
           2026/10 – 至今 Staff AI Engineer；2025/10 – 2026/10 Staff Software Engineer；2023/10 – 2025/10 Senior Software Engineer；2019/11 – 2023/10 Software Engineer。
-          開發與維護服務 7 個地區、每日 3000+ 位使用者的變更管理與簽核系統，並與既有製造系統整合：集中資料、依營運計畫驗證修改、送簽核後自動回寫製造系統，加速製程迭代。
-          目前擔任 20 人團隊的 Architect；曾主導 4 人專案，主持 Scrum 會議、Code Review 與結對程式設計，並為內外部團隊提供軟體架構設計與技術選型諮詢。
-          以 Jenkins、Octopus、Docker、Helm 將服務從 Windows Server IIS 遷移至 Kubernetes，並導入 Azure 雲端服務。
-          抓出資料庫 N+1 查詢改善近千倍系統效能；將 1TB 的 base64 檔案從資料庫遷移至儲存服務，CPU 由 100% 降至 10% 以下、記憶體由 64GB 降至 8GB；重寫 ETL，每日 Snowflake 上傳由 7 小時縮短至 1 分鐘。
-          導入單元測試、Linter 與 Formatter 並在 git hook 與 CI 把關，追查根因償還技術債，讓團隊值班時數由每週 60+ 小時降至 5 小時以下。
+          核心系統：開發與維護服務 7 個地區、每日 3000+ 位使用者的變更管理與簽核系統，並與既有製造系統整合：集中資料、依營運計畫驗證修改、送簽核後自動回寫製造系統；抓出資料庫 N+1 查詢等脆弱處，改善近千倍系統效能。
+          團隊領導：目前擔任 20 人團隊的 Architect；曾主導 4 人專案，主持 Scrum 會議、Code Review 與結對程式設計；訪談使用者釐清業務領域並撰寫文件，為內外部團隊提供軟體架構設計與技術選型諮詢。
+          架構與雲端：以 Jenkins、Octopus、Docker、Helm 將服務從 Windows Server IIS 遷移至 Kubernetes；導入 Azure 服務（AD、Key Vault、Service Bus、Blob Storage、Cache for Redis、Application Insights、Microsoft Graph API）；實作 Job Queue 服務與三層快取；以健康檢查、Application Insights 與 Kubernetes probes 提升可觀測性，並集中化所有日誌。
+          效能優化：將 1TB 的 base64 檔案從資料庫遷移至儲存服務，CPU 由 100% 降至 10% 以下、記憶體由 64GB 降至 8GB；重寫 ETL，每日 Snowflake 上傳由 7 小時縮短至 1 分鐘。
+          品質與維運：導入單元測試、Linter 與 Formatter 並在 git hook 與 CI 把關；將事故依成因分組、追查根因償還技術債，讓團隊值班時數由每週 60+ 小時降至 5 小時以下。
       - type: Project
         title: bisection-anything
         subtitle:
@@ -114,6 +118,17 @@ chapters:
         to: 至今
         description: |
           用兩兩比較替任何東西排名：每次只回答「這兩個你比較喜歡哪一個」，就能選出冠軍或排出完整名次。
+      - type: Project
+        title: danmu-classroom
+        subtitle:
+        tags: [TypeScript, Cloudflare Workers, Electron, LINE Bot]
+        link: https://github.com/danmu-classroom/danmu-classroom
+        image: https://raw.githubusercontent.com/danmu-classroom/danmu-classroom/main/docs/images/screen-browser.png
+        from: 2018-05-07
+        to: 至今
+        description: |
+          彈幕教室：讓台下的人用手機、電腦或 LINE 傳訊息，訊息會變成彈幕飛過講者的螢幕，不用安裝、不用註冊。
+          2026 年以 Cloudflare Workers（Hono、Durable Objects、D1）全面重寫原本 2018 年的 Rails + Redis 版本，透過 WebSocket 推送彈幕，並提供透明的 Electron 桌面 app 與可當 OBS 來源的瀏覽器版螢幕。
       - type: Project
         title: caten-church
         subtitle:
@@ -137,16 +152,15 @@ chapters:
           本篇論文將以 Dcard 論壇上的時事、明星戲劇與成人內容等三大類貼文作為案例，透過網路爬蟲、情感分析與語意分析等文字探勘技術，分析貼文與留言，藉由打造一套人機介面資訊系統，輔助專家判讀對話健康程度與判斷迴聲室效應是否存在於此。
           透過案例探討 Dcard 這個年輕的網路論壇的環境與各個看板的現況。最後請 3 位常於網路瀏覽貼文或參與討論的網路社群專家體驗本系統並給予回饋來改進本系統。
       - type: Project
-        title: danmu-classroom
+        title: chinese-segmentation-as-service
         subtitle:
-        tags: [TypeScript, Cloudflare Workers, Electron, LINE Bot]
-        link: https://github.com/danmu-classroom/danmu-classroom
-        image: https://raw.githubusercontent.com/danmu-classroom/danmu-classroom/main/docs/images/screen-browser.png
-        from: 2018-05-07
-        to: 至今
+        tags: [Python, Flask, jieba, SnowNLP, pkuseg]
+        link: https://github.com/jk195417/chinese-segmentation-as-service
+        image:
+        from: 2019-04
+        to: 2019-09
         description: |
-          彈幕教室：讓台下的人用手機、電腦或 LINE 傳訊息，訊息會變成彈幕飛過講者的螢幕，不用安裝、不用註冊。
-          2026 年以 Cloudflare Workers（Hono、Durable Objects、D1）全面重寫原本 2018 年的 Rails + Redis 版本，透過 WebSocket 推送彈幕，並提供透明的 Electron 桌面 app 與可當 OBS 來源的瀏覽器版螢幕。
+          以 Flask 將 jieba、SnowNLP、pkuseg 三種中文斷詞工具包裝成 HTTP API，作為碩士論文中 Rails 系統的文字前處理服務。
       - type: Project
         title: lottery
         subtitle:
