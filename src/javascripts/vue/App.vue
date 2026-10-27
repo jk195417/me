@@ -2,7 +2,7 @@
   <div class="container pt-2">
     <navbar :chapters="data.chapters"
             :websites="data.websites"
-            :current_chapter.sync="current_chapter"
+            v-model:current_chapter="current_chapter"
             :print_mode="print_mode">
     </navbar>
     <chapters :chapters="data.chapters"
@@ -11,8 +11,8 @@
     </chapters>
     <foooter :info="data.info"
              :i18n="i18n"
-             :current_lang.sync="current_lang"
-             :print_mode.sync="print_mode">
+             v-model:current_lang="current_lang"
+             v-model:print_mode="print_mode">
     </foooter>
   </div>
 </template>
@@ -21,7 +21,12 @@
 import navbar from './components/navbar.vue'
 import chapters from './components/chapters.vue'
 import footer from './components/footer.vue'
-import i18n from '../../../data/*.yml'
+
+// Each data/$lang.yml becomes one version of the resume
+const files = import.meta.glob('../../../data/*.yml', { eager: true, import: 'default' })
+const i18n = Object.fromEntries(
+  Object.entries(files).map(([path, data]) => [path.match(/([^/]+)\.yml$/)[1], data])
+)
 
 export default {
   name: 'App',

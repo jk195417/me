@@ -1,31 +1,28 @@
 {
   "name": "me",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "self introduction",
   "repository": "https://github.com/jk195417/me.git",
   "author": "楊竑昕 <jk195417@gmail.com>",
   "license": "MIT",
-  "main": "src/index.html",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url ./",
-    "predeploy": "rm -rf dist && yarn build",
-    "deploy": "gh-pages -d dist"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.10.0",
-    "bootstrap": "^4.4.1",
-    "dayjs": "^1.8.19",
-    "jquery": "^3.5.0",
-    "popper.js": "^1.16.0",
-    "vue": "^2.6.11",
-    "vue-hot-reload-api": "^2.3.4"
+    "@fortawesome/fontawesome-free": "^7.3.1",
+    "bootstrap": "^5.3.8",
+    "dayjs": "^1.11.23",
+    "vue": "^3.5.43"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=22"
   },
   "devDependencies": {
-    "@vue/component-compiler-utils": "^3.1.1",
-    "gh-pages": "^2.2.0",
-    "parcel-bundler": "1.12.5",
-    "sass": "^1.22.12",
-    "vue-template-compiler": "^2.6.11"
+    "@rollup/plugin-yaml": "^5.0.0",
+    "@vitejs/plugin-vue": "^6.0.10",
+    "vite": "^8.3.4"
   }
 }

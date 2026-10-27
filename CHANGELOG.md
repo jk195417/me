@@ -6,6 +6,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-10-27
+
+### Changed
+
+- Upgrade Vue 2 to Vue 3, Bootstrap 4 to Bootstrap 5, Font Awesome 5 to Font Awesome 7
+- Replace Parcel 1 with Vite, use npm instead of Yarn
+- Deploy to GitHub Pages by GitHub Actions instead of the `gh-pages` package
+- Require Node.js 22+
+
+### Removed
+
+- Remove jQuery and Popper.js, which were not used
+- Remove the deprecated Universal Analytics tracking
+
 ## [0.0.3] - 2020-01-18
 
 ### Changed
@@ -44,6 +58,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - My personal information `src/data/*.yml` files as example
 
 [unreleased]: https://github.com/jk195417/me/compare/v0.0.3...HEAD
+
+[1.0.0]: https://github.com/jk195417/me/compare/v0.0.3...v1.0.0
 
 [0.0.3]: https://github.com/jk195417/me/compare/v0.0.2...v0.0.3
 

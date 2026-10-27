@@ -1,8 +1,8 @@
 <template lang="html">
   <main id="experience" class="container">
-    <h3 v-if="print_mode" class="text-capitalize font-weight-normal my-4">{{title}}</h3>
-    <div v-for="experience in content" class="experience">
-      <h5 class="text-capitalize font-weight-normal my-2">
+    <h3 v-if="print_mode" class="text-capitalize fw-normal my-4">{{title}}</h3>
+    <div v-for="(experience, index) in content" :key="index" class="experience">
+      <h5 class="text-capitalize fw-normal my-2">
         <i class="fas fa-folder"></i> {{ experience.type }}
       </h5>
       <p class="d-flex">
@@ -11,18 +11,18 @@
           <div v-if="experience.subtitle">{{ experience.subtitle }}</div>
           <a v-if="experience.link" :href="experience.link" target="_blank">{{experience.link}}</a>
           <div v-if="experience.tags">
-            <span v-for="tag in experience.tags" class="text-capitalize font-weight-light badge border border-secondary mr-1 mt-1">
+            <span v-for="tag in experience.tags" :key="tag" class="text-capitalize fw-light badge text-body border border-secondary me-1 mt-1">
               {{ tag }}
             </span>
           </div>
         </span>
-        <span class="ml-auto small font-weight-light">
+        <span class="ms-auto small fw-light">
           <span v-if="experience.from">{{ date_formater(experience.from) }}</span> -
           <span v-if="experience.to">{{ date_formater(experience.to) }}</span>
         </span>
       </p>
       <div class="container">
-        <p v-for="sentence in sentences(experience.description)">{{ sentence }}</p>
+        <p v-for="(sentence, index) in sentences(experience.description)" :key="index">{{ sentence }}</p>
         <img v-if="experience.image" :src="experience.image" class="border border-dark">
       </div>
       <hr>

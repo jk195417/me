@@ -3,12 +3,13 @@
     <hr>
     <nav class="nav align-items-center justify-content-center">
       <i18n v-for="(data, lang) in i18n"
+            :key="lang"
             :lang="lang"
             :current_lang="current_lang"
-            @click.native="$emit('update:current_lang', lang)"
+            @click="$emit('update:current_lang', lang)"
             class="text-dark">
       </i18n>
-      <div class="mr-auto"></div>
+      <div class="me-auto"></div>
       <a :class="{ 'active': print_mode }"
          @click="$emit('update:print_mode', !print_mode)"
          href="javascript:void(0)"
@@ -17,7 +18,7 @@
       </a>
       <div class="w-100"></div>
       <div class="nav-item">
-        Copyright <i class="far fa-copyright"></i> 2019
+        Copyright <i class="far fa-copyright"></i> 2019-{{ new Date().getFullYear() }}
         <a href="mailto:jk195417@gmail.com?subject=github.com/jk195417/me.git"
            class="text-dark"> 楊竑昕
         </a>

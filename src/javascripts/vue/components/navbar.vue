@@ -2,14 +2,16 @@
 <div>
   <nav class="nav align-items-center justify-content-center">
     <chapter v-for="(chapter, key) in chapters"
+          :key="key"
           :chapter="key"
           :current_chapter="current_chapter"
           :print_mode="print_mode"
           :title="chapter.title"
-          @click.native="$emit('update:current_chapter', key)">
+          @click="$emit('update:current_chapter', key)">
     </chapter>
     <div class="w-100"></div>
     <website v-for="site in websites"
+             :key="site.src"
              :src="site.src"
              :fa_icon="site.fa_icon">
     </website>

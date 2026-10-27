@@ -1,8 +1,8 @@
 <template lang="html">
 <div>
-  <component v-for="(chapter, key) in chapters"
+  <component v-for="(chapter, key) in visible_chapters"
+             :key="key"
              :is="key"
-             v-if="print_mode || key === current_chapter"
              :title="chapter.title"
              :content="chapter.content"
              :print_mode="print_mode">
@@ -23,6 +23,12 @@ export default {
     'education': education,
     'skills': skills,
     'experience': experience
+  },
+  computed: {
+    visible_chapters: function () {
+      if (this.print_mode) return this.chapters
+      return { [this.current_chapter]: this.chapters[this.current_chapter] }
+    }
   }
 }
 </script>
