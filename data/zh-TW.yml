@@ -121,7 +121,7 @@ chapters:
         link: https://github.com/CatenChurch/caten-church
         image: https://i.imgur.com/wpkTLeL.png
         from: 2016-03-29
-        to: 2019
+        to: 2019-10-01
         description: |
           教會網站，包含 SEO & GA，前台會員中心、活動報名、回報出席，後台會員與權限管理、發布活動與公告、小組成員出席統計、網站現況監控等功能。
       - type: Master Thesis
