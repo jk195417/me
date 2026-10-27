@@ -26,48 +26,35 @@ chapters:
     title: introduction
     content: |
       Hi,
-      My name is Yang Hong Xin, you can call me Aaron, I was born in 1995 and live in Kaohsiung, south of Taiwan.
-      During my college at Feng Chia University, I major in automatic control engineering, writing code to control hardware, e.g PLC/8051/Arduino. As it concerns me, It is much easier to write the program instead of designing the circuits of hardware. Thus, I start interesting in programming and dive into it. I took a lot of courses from the department of computer science, invested all my available time to study and practice, catch up the basic knowledge in computer science like data structure, operating system, algorithm, object orientation, database, and testing.
-      After graduated from college and finish my military service, I joined Dr. Kuo Feng Yang's lab at National Sun Yat-Sen University for my master degree in information management. The research area I chose was to measure the health of conversation in social networks sites or online forums.
-      When I get off work, I would join the community of programmers to make new friends, read some articles in technology and browsing Github Trending, or do my side projects for fun (I have a lot of silly ideas waiting for me to implement).
+      My name is Yang Hong Xin, you can call me Aaron. I'm from Kaohsiung, Taiwan, and I'm a Staff AI Engineer at Micron. My software engineering journey started in 2014.
+      At Feng Chia University I majored in automatic control engineering and fell in love with programming while writing code for 8051, PLC and Arduino. I completed a second program in Computer Science to catch up on data structures, operating systems, algorithms, object orientation and databases.
+      For my master's degree I joined Dr. Kuo Feng Yang's lab at National Sun Yat-sen University, researching conversation health on social networks with text mining and natural language processing.
+      I joined Micron in 2019. I build and run a workflow and change management system used by 3,000+ people every day across 7 regions, and lead a team of 4 developers. I'm well-versed in .NET Core, Angular, cloud and containers (Kubernetes, Azure), and I care deeply about code quality, testing culture and developer experience.
       Thanks for reading. May the force be with you.
   skills:
     title: skills
     content:
       description: |
-        I am using Ruby as my main programming language, and I have used the framework named Ruby on Rails to develop web back-end application s since 2014. I can develop/compile/package front-end side as well, I am familiar with Vue, a front-end framework, and Bootstrap, a CSS framework.
-        I can do both by using ORM or pure SQL to access the database, also have strong knowledge in indexes, locks, transactions, designing schema, and database normalization.
-        I have experience in Git like version control, team collaboration, and deploy an application to the production server on Amazon Web Services, Google Cloud Platform, or Heroku. Can read any API or Library document, learning usage of the third-party library by myself.
-        My master thesis using Python packages for text mining, and serve it as HTTP API service by framework named Flask. and using Ruby for database manipulation(ORM), concurrency tasks management. Crawling data from Dacrd.com, saved to PostgreSQL and run the analysis, e.g. sentences similarity and sentiment analysis.
+        Backend: C#, .NET Core, Entity Framework Core, Ruby on Rails, Python, Flask, Node.js, RESTful APIs, message queues, background jobs.
+        Frontend: TypeScript, JavaScript, Angular, RxJS, Vue, Sass, Electron.
+        Testing and quality: xUnit, Moq, AutoFixture, FluentAssertions, Jest, ESLint, Prettier, SonarLint, dotnet format.
+        DevOps and containers: Jenkins, Octopus, Docker, Docker Compose, Podman, Helm, Kubernetes, OpenShift.
+        Cloud: Azure (AD, AKS, Red Hat OpenShift, Key Vault, Service Bus, Blob Storage, Cache for Redis, Application Insights, Private Link), Microsoft Graph API, Google Cloud, Cloudflare DNS.
+        Data: MSSQL, PostgreSQL, MySQL, MongoDB, Redis, RabbitMQ, Snowflake.
+        Practices: OOP, SOLID, KISS, SSOT, dependency injection, TDD, design patterns, one-way data flow.
       list:
-        - name: JavaScript
-          rate: 90/100
-        - name: TypeScript
-          rate: 90/100
-        - name: Ruby on Rails
-          rate: 88/100
-        - name: Ruby
-          rate: 88/100
-        - name: Bootstrap
-          rate: 88/100
-        - name: Git
-          rate: 85/100
-        - name: Angular
-          rate: 85/100
-        - name: Redis
-          rate: 84/100
-        - name: Postgres
-          rate: 83/100
-        - name: C#
-          rate: 80/100
-        - name: Vue
-          rate: 78/100
-        - name: RxJS
-          rate: 75/100
+        - name: C# / .NET Core
+          rate: ★★★★
+        - name: TypeScript / Angular
+          rate: ★★★★
+        - name: DevOps / Cloud
+          rate: ★★★★
+        - name: Database / Performance
+          rate: ★★★★
+        - name: Ruby / Rails
+          rate: ★★★★
         - name: Python
-          rate: 74/100
-        - name: TOEIC
-          rate: 750/990
+          rate: ★★★★
         - name: Chinese
           rate: Native
         - name: Taiwanese
@@ -105,19 +92,30 @@ chapters:
     title: experience
     content:
       - type: Job
-        title: IT Software Engineer
-        subtitle: Micron
-        tags: [.Net, Angular]
+        title: Staff AI Engineer
+        subtitle: Micron, Taichung
+        tags: [.NET Core, Angular, Kubernetes, Azure]
         link:
         image:
         from: 2019-11
-        to: 2021
+        to: Present
         description: |
-          維護一個每日平均 2000 位跨國使用者的大型變更管理與簽核系統，並串接其他系統以完成簽核成功後自動變更的需求，
-          在這段期間我透過重構系統的脆弱面改善了近千倍的系統效能，如：
-          抓出 database n+1 query 並優化之；
-          透過分頁與延遲載入提升前端頁面載入速度，進而改善使用者體驗；
-          使用 Azure 雲端服務替代不穩定的相依資料源，進而提升系統的穩定度。
+          2026-10 – Present: Staff AI Engineer; 2025-10 – 2026-10: Staff Software Engineer; 2023-10 – 2025-10: Senior Software Engineer; 2019-11 – 2023-10: Software Engineer.
+          Built and maintained an internal workflow and change management system serving 3,000+ daily active users across 7 regions, integrated with manufacturing systems to validate, approve and apply changes automatically.
+          Lead a team of 4 developers: host Scrum meetings, code reviews and pair programming; provide architecture designs and tech stack consulting for internal and external teams.
+          Migrated services from Windows Server IIS to Kubernetes with Jenkins, Octopus, Docker and Helm, and adopted Azure services (AD, Key Vault, Service Bus, Blob Storage, Cache for Redis, Application Insights).
+          Improved system performance by nearly 1,000x by fixing database N+1 queries; moved 1 TB of base64 files out of the database, cutting CPU from 100% to under 10% and RAM from 64 GB to 8 GB; rewrote ETL jobs, cutting the daily Snowflake upload from 7 hours to 1 minute.
+          Introduced unit testing, linters and formatters enforced by git hooks and CI, and cut the team's on-call effort from 60+ hours to under 5 hours a week by fixing root causes.
+      - type: Project
+        title: bisection-anything
+        subtitle:
+        tags: [TypeScript]
+        link: https://yang-hong-xin.com/bisection-anything/
+        image:
+        from: 2026-10
+        to: Present
+        description: |
+          Rank anything by pairwise comparison: answer "which one do you like more?" until you get a champion or a full ranking.
       - type: Project
         title: caten-church
         subtitle:
@@ -172,12 +170,13 @@ chapters:
         description: |
           I wrote a script to sync data between Oracle(School) and MsSQL(Center For General Education), make RFID reader work fine till now.
       - type: Job
-        title: Project Contractor For Web Development
-        subtitle: 5XRUBY CO., LTD
+        title: Full Stack Engineer (Contract)
+        subtitle: 5xRuby, Taipei
         tags: [Rails]
         link:
         image: https://i.imgur.com/NRFfT4N.png
         from: 2017-08
         to: 2017-11
         description: |
-          collaborate with 2 senior engineers and a project manager, develop new features for dappei.com, including front-end, back-end, and database, in 3 months.
+          Worked with two senior engineers and a PM to ship new features for dappei.com within a 3-month project.
+          Integrated Instagram and Facebook OAuth login, and scheduled posts to Facebook and Instagram through their APIs.
