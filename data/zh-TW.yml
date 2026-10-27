@@ -15,9 +15,9 @@ websites:
   - name: Linkedin
     src: https://www.linkedin.com/in/hongxin-yang
     fa_icon: fab fa-linkedin-in
-  - name: Medium
-    src: https://medium.com/@yang.hong.xin
-    fa_icon: fab fa-medium-m
+  - name: Home
+    src: https://yang-hong-xin.com
+    fa_icon: fas fa-house
   - name: Blog
     src: https://blog.yang-hong-xin.com
     fa_icon: fas fa-blog
