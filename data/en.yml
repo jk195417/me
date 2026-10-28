@@ -29,7 +29,7 @@ chapters:
       My name is Yang Hong Xin, you can call me Aaron. I'm from Kaohsiung, Taiwan, and I'm a Staff AI Engineer at Micron. My software engineering journey started in 2014.
       At Feng Chia University I majored in automatic control engineering and fell in love with programming while writing code for 8051, PLC and Arduino. I completed a second program in Computer Science to catch up on data structures, operating systems, algorithms, object orientation and databases.
       For my master's degree I joined Dr. Kuo Feng Yang's lab at National Sun Yat-sen University, researching conversation health on social networks with text mining and natural language processing.
-      I joined Micron in 2019. I build and run a workflow and change management system used by 3,000+ people every day across 7 regions, and I'm currently the architect of a 20-person team. I'm well-versed in .NET Core, Angular, cloud and containers (Kubernetes, Azure), and I care deeply about code quality, testing culture and developer experience.
+      I joined Micron in 2019. I build and run a workflow and change management platform used by thousands of people every day across Micron's global fab, assembly and test sites, and I'm the design authority in an engineering org of about 20. I'm well-versed in .NET Core, Angular, cloud and containers (Kubernetes, Azure), I care deeply about code quality, observability and developer experience, and lately I bring AI into everyday engineering.
       Strengths: complex problem solving and effective communication.
       Thanks for reading. May the force be with you.
   skills:
@@ -42,6 +42,7 @@ chapters:
         DevOps and containers: Jenkins, Octopus, Docker, Docker Compose, Podman, Helm, Kubernetes, OpenShift.
         Cloud: Azure (AD, AKS, Red Hat OpenShift, Key Vault, Service Bus, Blob Storage, Cache for Redis, Application Insights, Private Link), Microsoft Graph API, Google Cloud, Cloudflare Workers, Cloudflare DNS.
         Data: MSSQL, PostgreSQL, MySQL, MongoDB, Redis, RabbitMQ, Snowflake.
+        AI-assisted development: GitHub Copilot, AI code review rules, evals, agent context files, MCP servers.
         Text mining and NLP: sentiment analysis, Chinese word segmentation, BERT embeddings, statistics, linear algebra.
         Practices: OOP, SOLID, KISS, SSOT, dependency injection, TDD, design patterns, one-way data flow.
       list:
@@ -103,11 +104,11 @@ chapters:
         to: Present
         description: |
           2026-10 – Present: Staff AI Engineer; 2025-10 – 2026-10: Staff Software Engineer; 2023-10 – 2025-10: Senior Software Engineer; 2019-11 – 2023-10: Software Engineer.
-          Core system: built and maintained an internal workflow and change management system serving 3,000+ daily active users across 7 regions, integrated with manufacturing systems to validate, approve and apply changes automatically. Improved performance by nearly 1,000x by fixing weak spots such as database N+1 queries.
-          Team leadership: architect of a 20-person team. Previously led a project with 4 developers, hosting Scrum meetings, code reviews and pair programming. Interview users to understand the business domain, document processes, and provide architecture designs and tech stack consulting for internal and external teams.
-          Architecture and cloud: migrated services from Windows Server IIS to Kubernetes with Jenkins, Octopus, Docker and Helm; adopted Azure services (AD, Key Vault, Service Bus, Blob Storage, Cache for Redis, Application Insights, Microsoft Graph API); built a job queue service and a three-layer cache; improved observability with health checks, Application Insights and Kubernetes probes, and centralized all logging.
-          Performance: moved 1 TB of base64 files out of the database, cutting CPU from 100% to under 10% and RAM from 64 GB to 8 GB; rewrote ETL jobs, cutting the daily Snowflake upload from 7 hours to 1 minute.
-          Quality and operations: introduced unit testing, linters and formatters enforced by git hooks and CI, and cut the team's on-call effort from 60+ hours to under 5 hours a week by grouping incidents by cause and fixing root causes.
+          Core platform: build and run an internal workflow and change management platform used by thousands of people every day across Micron's global fab, assembly and test sites, integrated with manufacturing systems to validate, approve and apply changes automatically; brought four new manufacturing facilities onto it.
+          Technical leadership: design authority in an engineering org of about 20 for the team's largest programs, leading requirement workshops that turn business processes into developer-ready work. Technical lead for a manufacturing setup automation program (about 94% less setup time); took over and redesigned a stalled cross-team conversion program (first wave live in 2026); stood up a standalone instance for a fab divestiture, and the team was named IT Culture Champions (2021).
+          Performance and cost: removed N+1 and per-record database access in two phases, taking the slowest operations from minutes to seconds (over 100x); moved inline images out of the database into object storage (database size down about 99%, database CPU from saturated to under 10%, weekly API outages to zero); rebuilt the data-warehouse export as incremental jobs (data freshness from about 12 hours to about 5 minutes); cut a cloud monitoring bill by about 87%.
+          Cloud and reliability: migrated services from Windows Server IIS to Kubernetes and Azure; replaced manual restarts with health checks, liveness probes, autoscaling and global load balancing, taking manual API restarts from 20+ a week to zero and on-call from 60+ to under 5 hours a week; built the platform's observability over six years, from centralized logging to browser-to-database distributed tracing.
+          Developer experience and AI: moved the team's repositories and CI to GitHub Actions (CI feedback about 40% faster); turned code-review judgement into AI code review rules A/B-tested with evals; raised test coverage from about 40% to 85% with agent-written tests; set up MCP servers and team Copilot skills. Talk: "Less is More — Designing Agent Context Files from Paper to Production" (2026).
       - type: Project
         title: bisection-anything
         subtitle:

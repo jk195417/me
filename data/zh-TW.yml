@@ -29,7 +29,7 @@ chapters:
       我叫楊竑昕，來自台灣高雄，現任美光科技 Staff AI Engineer，2014 年開始寫程式至今。
       大學就讀逢甲自控系，因為寫 8051、PLC 與 Arduino 而愛上寫程式，修完資工第二學程，補齊資料結構、作業系統、演算法、物件導向與資料庫等基本功。
       碩士在中山資管所，加入郭峰淵老師的實驗室，以文字探勘與自然語言處理研究社群網站的對話健康。
-      2019 年加入美光至今，負責服務 7 個地區、每日 3000+ 位使用者的變更管理與簽核系統，目前擔任 20 人團隊的 Architect。專長是 .NET Core、Angular、雲端與容器化（Kubernetes、Azure），以及建立測試與 CI/CD 文化。
+      2019 年加入美光至今，負責全球各廠區每天數千位使用者的變更管理與簽核平台，擔任約 20 人工程組織的設計負責人。專長是 .NET Core、Angular、雲端與容器化（Kubernetes、Azure），重視程式品質、可觀測性與開發者體驗，近年專注把 AI 帶進日常開發。
       個人優勢：擅長拆解複雜問題，溝通清楚有效。
       閒暇之餘我喜歡參與程式社群認識業界前輩；關注技術趨勢文章；翻翻 Github Trending；做些 side projects。
   skills:
@@ -42,6 +42,7 @@ chapters:
         DevOps 與容器：Jenkins、Octopus、Docker、Docker Compose、Podman、Helm、Kubernetes、OpenShift。
         雲端：Azure（AD、AKS、Red Hat OpenShift、Key Vault、Service Bus、Blob Storage、Cache for Redis、Application Insights、Private Link）、Microsoft Graph API、Google Cloud、Cloudflare Workers、Cloudflare DNS。
         資料：MSSQL、PostgreSQL、MySQL、MongoDB、Redis、RabbitMQ、Snowflake；熟悉索引、鎖、交易、綱要設計與正規化。
+        AI 輔助開發：GitHub Copilot、AI code review 規則、eval、agent context 檔、MCP server。
         文字探勘與 NLP：情緒分析、中文斷詞、BERT 詞向量；研究所修習統計、線性代數、影像處理與自然語言處理。
         開發實踐：OOP、SOLID、KISS、SSOT、依賴注入、TDD、設計模式、單向資料流。
       list:
@@ -103,11 +104,11 @@ chapters:
         to: 至今
         description: |
           2026/10 – 至今 Staff AI Engineer；2025/10 – 2026/10 Staff Software Engineer；2023/10 – 2025/10 Senior Software Engineer；2019/11 – 2023/10 Software Engineer。
-          核心系統：開發與維護服務 7 個地區、每日 3000+ 位使用者的變更管理與簽核系統，並與既有製造系統整合：集中資料、依營運計畫驗證修改、送簽核後自動回寫製造系統；抓出資料庫 N+1 查詢等脆弱處，改善近千倍系統效能。
-          團隊領導：目前擔任 20 人團隊的 Architect；曾主導 4 人專案，主持 Scrum 會議、Code Review 與結對程式設計；訪談使用者釐清業務領域並撰寫文件，為內外部團隊提供軟體架構設計與技術選型諮詢。
-          架構與雲端：以 Jenkins、Octopus、Docker、Helm 將服務從 Windows Server IIS 遷移至 Kubernetes；導入 Azure 服務（AD、Key Vault、Service Bus、Blob Storage、Cache for Redis、Application Insights、Microsoft Graph API）；實作 Job Queue 服務與三層快取；以健康檢查、Application Insights 與 Kubernetes probes 提升可觀測性，並集中化所有日誌。
-          效能優化：將 1TB 的 base64 檔案從資料庫遷移至儲存服務，CPU 由 100% 降至 10% 以下、記憶體由 64GB 降至 8GB；重寫 ETL，每日 Snowflake 上傳由 7 小時縮短至 1 分鐘。
-          品質與維運：導入單元測試、Linter 與 Formatter 並在 git hook 與 CI 把關；將事故依成因分組、追查根因償還技術債，讓團隊值班時數由每週 60+ 小時降至 5 小時以下。
+          核心平台：開發與維運變更管理與簽核平台，全球各廠區每天數千位使用者；與製造系統整合，集中資料、依營運計畫驗證修改、送簽核後自動回寫製造系統；把四個新的製造廠區導入平台。
+          技術領導：擔任約 20 人工程組織的設計負責人，主持團隊最大型計畫的需求工作坊，把業務流程轉成開發者可以直接動工的工作；製造設定自動化計畫的技術負責人（設定時間減少約 94%）；接手並重新設計停滯的跨團隊轉換計畫（第一波 2026 年上線）；為出售的晶圓廠建立獨立環境並如期移交，團隊獲得 IT Culture Champions（2021）。
+          效能與成本：分兩階段移除 N+1 與逐筆存取，最慢的操作從數分鐘縮到數秒（超過百倍）；把內嵌圖片移出資料庫改存物件儲存（資料庫容量減少約 99%、資料庫主機 CPU 從滿載降到 10% 以下、每週 API 當機歸零）；資料倉儲匯出改成增量，資料延遲從約 12 小時縮到約 5 分鐘；雲端監控費用減少約 87%。
+          雲端與可靠性：將服務從 Windows Server IIS 遷移至 Kubernetes 與 Azure；從手動重開主機改成 health check、probe 自動重啟、autoscaling 與全域負載平衡，人工重啟 API 每週 20+ 次降到 0，on-call 每週 60+ 小時降到 5 小時以下；六年來建立從集中式 log 到瀏覽器至資料庫分散式追蹤的可觀測性。
+          開發者體驗與 AI：把團隊的 repo 與 CI 遷移到 GitHub Actions（CI 回饋快約 40%）；把 code review 判斷整理成 AI code review 規則並用 eval 做 A/B 測試；由 agent 撰寫測試，覆蓋率從約 40% 提高到 85%；建立 MCP server 與團隊 Copilot skills。演講：「Less is More — Designing Agent Context Files from Paper to Production」（2026）。
       - type: Project
         title: bisection-anything
         subtitle:
